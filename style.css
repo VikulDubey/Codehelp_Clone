@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 2px 10px var(--primary_color);
+  background: var(--primary_color);
+  z-index: 2;
+}
+
+.Mypage {
+  padding: 0px 1rem;
+  background-color: var(--bg-color);
+  content-visibility: auto;
+}
+
+:root {
+  --primary_color: whitesmoke;
+  --primary-heading-color: #101820ff;
+  --secondary_color: #101820ff;
+  --bg-color: whitesmoke;
+}
+
+.dark_mode {
+  --primary_color: #101820ff;
+  --primary-heading-color: whitesmoke;
+  --secondary_color: whitesmoke;
+  --bg-color: #101820ff;
+}
+
+.Mainheading {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--primary-heading-color);
+}
+
+.navitems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menulogo {
+  display: none;
+}
+
+.darkmode {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center7;
+}
+
+.bookmarks ul {
+  display: flex;
+}
+
+.bookmarks ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.bookmarks ul li a {
+  text-decoration: none;
+  color: var(--secondary_color);
+  font-weight: 500;
+}
+
+.paragraph {
+  text-align: justify;
+  margin: 0px 12px;
+  background-color: var(--bg-color);
+  color: var(--primary-heading-color);
+}
+
+.heading h2 {
+  text-align: center;
+  margin: 10px 0px;
+  color: var(--primary-heading-color);
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 12px 0px;
+}
+
+.three_iframe {
+  display: flex;
+  justify-content: center;
+  gap: 0px 6px;
+}
+
+.three_iframe iframe {
+  border-radius: 8px;
+}
+
+.media video,
+audio {
+  border-radius: 5px;
+  z-index: 1;
+  background-color: var(--bg-color);
+}
+
+.playlist_link {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+.playlist_link a {
+  text-decoration: none;
+  color: var(--secondary_color);
+  font-weight: 500;
+}
+
+.playlist_link a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+footer {
+  text-align: center;
+  font-weight: 400;
+  padding: 1rem 0rem;
+  color: var(--primary-heading-color);
+  background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 1162px) {
+  .Mypage {
+    padding: 0rem 1rem;
+    content-visibility: auto;
+  }
+
+  .navitems {
+    flex-direction: column;
+  }
+
+  .menulogo {
+    display: block;
+    margin: 0.7rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 10rem;
+  }
+
+  .darkmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9rem;
+    bottom: 2.3rem;
+  }
+
+  .darkmodebtnafterbreadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9rem;
+    bottom: 9.98rem;
+  }
+
+  .logo {
+    height: 0.1rem;
+  }
+
+  .bookmarks {
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .visible {
+    display: block;
+    background-color: var(--bg-color);
+    height: 6.7rem;
+    animation: spread 0.3s linear;
+  }
+  @keyframes spread {
+    0% {
+      height: 0rem;
+    }
+    100% {
+      height: 6.7rem;
+    }
+  }
+
+  .bookmarks ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bookmarks ul li {
+    text-align: center;
+  }
+
+  .Mainheading {
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .media {
+    flex-direction: column;
+  }
+
+  .media audio {
+    margin-bottom: 1rem;
+  }
+
+  .paragraph {
+    text-align: justify;
+  }
+
+  .three_iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px 12px;
+  }
+
+  .playlist_link {
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+}
